@@ -844,10 +844,28 @@
         </div>
     </section>
     
+    <style>
+        .contact a {
+            color: rgb(124, 117, 117);
+            text-decoration: underline;
+            font-weight: bold;
+            animation: blink 1.3s infinite;
+            transition: color 0.3s ease;
+        }
+    
+        @keyframes blink {
+            0% { color: rgb(15, 86, 179); }
+            50% { color: white; }
+            100% { color: rgb(3, 126, 241); }
+        }
+    </style>
+    
     <!-- Contact Section -->
     <section class="contact" id="contact">
         <h2 class="section-title">Contact Us</h2>
         <div class="contact-container">
+    
+            <!-- Address -->
             <div class="contact-info">
                 <h3>Address</h3>
                 <div class="contact-method">
@@ -855,12 +873,16 @@
                         <i class="fas fa-map-marker-alt"></i>
                     </div>
                     <div>
-                        <p>Shop No: F111 (Furniture & Appliance... building)</p>
-                        <p>28 Bester Street</p>
-                        <p>Nelspruit 1200</p>
+                        <a href="https://www.google.com/maps/search/?api=1&query=28+Bester+Street,+Nelspruit+1200" target="_blank">
+                            <p>Shop No: F111 (Furniture & Appliance... building)</p>
+                            <p>28 Bester Street</p>
+                            <p>Nelspruit 1200</p>
+                        </a>
                     </div>
                 </div>
             </div>
+    
+            <!-- Phone -->
             <div class="contact-info">
                 <h3>Phone</h3>
                 <div class="contact-method">
@@ -868,11 +890,15 @@
                         <i class="fas fa-phone-alt"></i>
                     </div>
                     <div>
-                        <p>0607943668</p>
+                        <a href="tel:0607943668">
+                            <p>0607943668</p>
+                        </a>
                         <p>Time: 8am-4pm</p>
                     </div>
                 </div>
             </div>
+    
+            <!-- Email -->
             <div class="contact-info">
                 <h3>Email</h3>
                 <div class="contact-method">
@@ -880,13 +906,17 @@
                         <i class="fas fa-envelope"></i>
                     </div>
                     <div>
-                        <p>phelembefrank009@gmail.com</p>
+                        <a href="mailto:phelembefrank009@gmail.com">
+                            <p>phelembefrank009@gmail.com</p>
+                        </a>
                         <p>Response: As soon as we receive your Email</p>
                     </div>
                 </div>
             </div>
+    
         </div>
     </section>
+    
     
     <!-- Footer -->
     <footer>
