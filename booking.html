@@ -260,6 +260,37 @@
             display: block;
         }
         
+        /* Call Us Button */
+        .call-btn-container {
+            text-align: center;
+            margin-top: 30px;
+        }
+        
+        .call-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            padding: 15px 30px;
+            background: linear-gradient(45deg, var(--primary), var(--accent));
+            color: white;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .call-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 20px rgba(253, 121, 168, 0.5);
+        }
+        
+        .call-btn i {
+            font-size: 1.2rem;
+        }
+        
         @keyframes fadeIn {
             from { opacity: 0; transform: translateY(20px); }
             to { opacity: 1; transform: translateY(0); }
@@ -284,6 +315,11 @@
                 height: 40px;
                 font-size: 20px;
             }
+            
+            .call-btn {
+                padding: 12px 25px;
+                font-size: 0.9rem;
+            }
         }
     </style>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -297,7 +333,7 @@
         
         <div class="form-notice">
             <i class="fas fa-info-circle"></i>
-            <p>You will be contacted as soon as we receive yout booking (during business days) to confirm your booking details.</p>
+            <p>You will be contacted as soon as we receive your booking (during business days) to confirm your booking details.</p>
         </div>
         
         <form id="bookingForm" action="https://formsubmit.co/phelembefrank009@gmail.com, jblukhele2002@gmail.com" method="POST" enctype="multipart/form-data">
@@ -367,6 +403,13 @@
                 <p>We'll contact you shortly to confirm your appointment.</p>
             </div>
         </form>
+        
+        <!-- Call Us Button -->
+        <div class="call-btn-container">
+            <a href="tel:0607943668" class="call-btn">
+                <i class="fas fa-phone"></i> Call Us: 060 794 3668
+            </a>
+        </div>
     </div>
     
     <script>
